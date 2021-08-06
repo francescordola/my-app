@@ -15,8 +15,14 @@ import React from 'react';
 
 
 const App = () => {
-  const element = <div className="container">Hello World</div>
+  const element = 
+  <>
+    <h1>Hello World</h1>
+    <h2>It is {new Date().toLocaleTimeString()}.</h2>
+  </>
   return (element)
 }
+
+setInterval(App, 1000);
 
 export default App;
