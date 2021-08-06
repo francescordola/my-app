@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import {Time, Name} from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const render = () => {
+
+  ReactDOM.render(
+    <React.StrictMode>
+      <Name name="You"/>
+      <Time time={new Date().toLocaleTimeString()} />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+}
+
+setInterval(render, 1000);
