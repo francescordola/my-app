@@ -1,9 +1,9 @@
 import React from 'react';
 
-/* FOOTER
+/* FOOTER 
 import Footer from './components/Footer';
 
-const App = () => {
+export const App = () => {
   return (
     <React.Fragment>
       <div className="container">Hello World</div>
@@ -12,9 +12,7 @@ const App = () => {
     </React.Fragment>
   );
 }
-export default App;
 */
-
 
 /* TIMER
 const App = () => {
@@ -43,12 +41,15 @@ export default App;
 */
 
 // PROPS 2
-export const Name = (props) => {
-  const name = <h1>Hello {props.name}</h1>
-  return (name)
-}
+export const Name = ({name}) => <h1>Hello {name}</h1>
+export const Time = (props) => <h2>It's {props.time}</h2>
 
-export const Time = (props) => {
-  const time = <h2>It's {props.time}.</h2>
-  return (time)
-}
+// export const Name = (props) => {
+//   const name = <h1>Coding in the {props.name}</h1> 
+//   return name
+// }
+
+// export const Time = (props) => {
+//   const time = <h2>It's {props.time}.</h2>
+//   return time
+// }
