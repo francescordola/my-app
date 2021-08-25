@@ -1,26 +1,31 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import React from 'react';
+import { useEffect, useState } from 'react';
 
-// CITY
+//CITY
 const Name = (props) => {
-    console.log('ççççç')
+    console.log('city')
     const name = <h1>{props.name}</h1> 
     return name
 }
 
-//CLOCK
-const Time = () => {
-    const [ dateTime, setDateTime ] = useState(new Date()) 
-    const tick = () => { setDateTime(new Date()) }
-    useEffect(() => {
-        setInterval(() => tick(),1000);
-    }, [])
-  return <h2>{dateTime.toLocaleTimeString()}</h2>
+//DATE + TIME
+const DateTime = () => {
+    const [ date, setDateTime ] = useState(new Date());
+    const tick = () => { setDateTime(new Date()) };
+
+    useEffect(() => { 
+        setInterval(() => tick(),1000)
+    }, []);
+    return <>
+    <h2>{date.toLocaleDateString()}</h2>
+    <h2>{date.toLocaleTimeString()}</h2>
+    </>
 } 
 
 export const Footer = () => {
-    return (<footer>
+    return (
+    <footer>
         <Name name="City" />
-        <Time />
+        <DateTime />
     </footer>)
 }
