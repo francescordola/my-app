@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 
-// CITY
+//CITY
 const Name = (props) => {
     //console.log('city')
     const name = <h1>{props.name}</h1> 
