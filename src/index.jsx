@@ -8,7 +8,7 @@ const rootElement = document.getElementById('root');
 ReactDOM.render(
   <React.StrictMode>
     <Footer />
-    <Emoji/>
+    <Emoji />
   </React.StrictMode>,
   rootElement
 );
