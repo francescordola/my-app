@@ -1,8 +1,7 @@
 function Emoji() {
-    const emoji = Array(10*50).fill('🌲');
-      return emoji;
+  const emoji = Array(10 * 50).fill("🌲");
+  return emoji;
 }
-
 
 //   function Emoji() {
 //     const emoji = ['🌲'];
@@ -12,4 +11,4 @@ function Emoji() {
 //     }
 // }
 
-  export default Emoji;
+export default Emoji;

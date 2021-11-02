@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Footer } from './components/Footer';
-import Emoji from './components/emoji';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Footer } from "./components/Footer/footer";
+import Emoji from "./components/Emoji";
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 
 ReactDOM.render(
   <React.StrictMode>
