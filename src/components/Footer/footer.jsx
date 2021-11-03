@@ -41,7 +41,7 @@ const Name = (props) => {
   return name;
 };
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer>
       <Name name="City" />
@@ -49,3 +49,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

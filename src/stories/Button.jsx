@@ -5,6 +5,7 @@ import "./button.css";
 /**
  * Primary UI component for user interaction
  */
+
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary
     ? "storybook-button--primary"
@@ -49,6 +50,6 @@ Button.propTypes = {
 Button.defaultProps = {
   backgroundColor: true,
   primary: true,
-  size: "large",
+  size: "medium",
   onClick: undefined,
 };
