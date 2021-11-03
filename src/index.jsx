@@ -1,14 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Footer } from "./components/Footer/footer";
+import About from "./components/About/about";
 import Emoji from "./components/Emoji";
 
 const rootElement = document.getElementById("root");
 
 ReactDOM.render(
   <React.StrictMode>
-    <Footer />
     <Emoji />
+    <About />
+    <Footer />
   </React.StrictMode>,
   rootElement
 );

@@ -47,8 +47,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: "medium",
+  backgroundColor: true,
+  primary: true,
+  size: "large",
   onClick: undefined,
 };
