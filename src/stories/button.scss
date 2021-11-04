@@ -3,8 +3,11 @@
   font-weight: 400;
   border: 0;
   cursor: pointer;
-  display: inline-block;
-  line-height: 1;
+
+  position: absolute;
+  right: 0;
+  bottom: 50vh;
+  margin: 0;
 }
 
 .storybook-button--primary {

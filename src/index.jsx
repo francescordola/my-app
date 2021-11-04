@@ -11,7 +11,7 @@ ReactDOM.render(
     {/* <Emoji /> */}
     <Board />
     <Footer />
-  </React.StrictMode>,
+    </React.StrictMode>,
   rootElement
 );
 

@@ -16,7 +16,7 @@ const Board = () => {
     <>
     <HowToRead />
     <About />
-    <div className={ style.rectangle }>Menu</div>
+    <div className={ style.rectangle }></div>
     </>
   )
 }
