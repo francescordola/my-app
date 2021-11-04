@@ -1,22 +1,21 @@
 import React from "react";
 
-import { Button } from "./Button";
+import { ButtonOriginal } from "./ButtonOriginal";
 
 export default {
-  title: "Example/Button",
-  component: Button,
+  title: "Example/ButtonOriginal",
+  component: ButtonOriginal,
   argTypes: {
     backgroundColor: { control: "color" },
   },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <ButtonOriginal {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  size: "large",
-  label: "Button",
+  label: "Ciao",
 };
 
 export const Secondary = Template.bind({});
