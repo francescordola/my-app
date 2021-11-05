@@ -8,16 +8,39 @@
   right: 0;
   bottom: 50vh;
   margin: 0;
+
+  .howtoread {
+    margin-right: 80px;
+  }
 }
 
 .storybook-button--primary {
   color: white;
   background-color: #1ea7fd;
 
-  :hover {
+  &:hover {
     color: black;
     background-color: grey;
   }
+
+  &:active {
+    color: black;
+    background-color: yellow;
+  }
+
+  // &.about:hover {
+  //   color: black;
+  //   background-color: red;
+  // }
+
+  // .howtoread {
+  //   margin-right: 80px;
+
+  //   &:hover {
+  //     color: black;
+  //     background-color: grey;
+  //   }
+  // }
 }
 
 // .storybook-button--primary:hover {

@@ -2,20 +2,20 @@ import React from "react";
 import { Primary } from "../../stories/Button.stories";
 import style from "./styles.module.scss";
 
-const About = () => {
-  return <Primary label='About' />;
+const About = ({className}) => {
+  return <Primary className={className} label='About' />;
 };
 
-const HowToRead = () => {
-  return <Primary label='How to read' />;
+const HowToRead = ({className}) => {
+  return <Primary className={className} label='How to read' />;
 };
 
 // COMPONENTE
 const Board = () => {
   return (
     <>
-    <HowToRead />
-    <About />
+    <HowToRead className={ style.about }/>
+    <About className={ style.howtoread }/>
     <div className={ style.rectangle }></div>
     </>
   )

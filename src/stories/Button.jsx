@@ -6,16 +6,17 @@ import "./button.scss";
  * Primary UI component for user interaction
  */
 
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Button = ({ className, primary, backgroundColor, size, label, ...props }) => {
+  console.log(className)
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
   return (
     <button
       type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
+      className={["storybook-button", `storybook-button--${size}`, mode, className].join(
         " "
-      )}
+      )}  
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
@@ -52,4 +53,5 @@ Button.defaultProps = {
   primary: true,
   size: "medium",
   onClick: undefined,
+  className: true,
 };
