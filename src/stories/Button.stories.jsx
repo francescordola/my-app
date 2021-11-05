@@ -10,15 +10,17 @@ export default {
   },
 };
 
-//export const Primary = () => <Button primary>Button</Button>;
-
 const Template = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
-  size: "large",
-  label: "Button",
+  label: "Primary",
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  secondary: true,
+  label: "Secondary",
 };
 
 export const Large = Template.bind({});

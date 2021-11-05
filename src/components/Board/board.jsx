@@ -7,11 +7,11 @@ import Navbar from "./Navbar/navbar";
 const Board = () => {
   return (
     <>
-    <Navbar />
-    <About/>
-    <Legenda/>
+      <Navbar />
+      <About />
+      <Legenda />
     </>
-  )
-}
+  );
+};
 
 export default Board;

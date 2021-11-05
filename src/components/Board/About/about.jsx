@@ -5,9 +5,9 @@ import style from "./styles.module.scss";
 const About = () => {
   return (
     <>
-    <div className={ style.rectangle }></div>
+      <div className={style.rectangle}></div>
     </>
-  )
-}
+  );
+};
 
 export default About;

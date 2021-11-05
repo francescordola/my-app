@@ -5,9 +5,9 @@ import style from "./styles.module.scss";
 const Legenda = () => {
   return (
     <>
-    <div className={ style.rectangle }></div>
+      <div className={style.rectangle}></div>
     </>
-  )
-}
+  );
+};
 
 export default Legenda;

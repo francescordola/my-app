@@ -1,22 +1,22 @@
 import React from "react";
-import { Primary } from "../../../stories/Button.stories";
+import { Button } from "../../../stories/Button";
 
-const About = ({className}) => {
-  return <Primary className={className} label='About' />;
+const About = () => {
+  return <Button label="About" />;
 };
 
-const HowToRead = ({className}) => {
-  return <Primary className={className} label='How to read' />;
+const HowToRead = () => {
+  return <Button secondary label="How to read" />;
 };
 
 // COMPONENTE
 const Navbar = () => {
   return (
     <>
-    <HowToRead/>
-    <About/>
+      <HowToRead />
+      <About />
     </>
-  )
-}
+  );
+};
 
 export default Navbar;
