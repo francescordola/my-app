@@ -13,7 +13,7 @@ const HowToRead = () => {
 // COMPONENTE
 const Navbar = () => {
   return (
-    <div className={ style.navbar }>
+    <div className={style.navbar}>
       <HowToRead />
       <About />
     </div>

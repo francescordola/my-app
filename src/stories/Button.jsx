@@ -15,7 +15,7 @@ export const Button = ({
 }) => {
   const mode = secondary
     ? "storybook-button--secondary"
-    : "storybook-button--primary"
+    : "storybook-button--primary";
   return (
     <button
       type="button"
