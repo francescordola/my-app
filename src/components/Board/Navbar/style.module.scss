@@ -1,3 +1,8 @@
-.grey {
-  background-color: violet;
+.navbar {
+  position: absolute;
+  right: 0;
+  bottom: 50vh;
+
+  display: flex;
+  grid-gap: 3px;
 }

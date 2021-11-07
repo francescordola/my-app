@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../../../stories/Button";
-// import style from "./styles.module.scss";
+import style from "./style.module.scss";
 
 const About = () => {
   return <Button label="About" />;
@@ -13,10 +13,10 @@ const HowToRead = () => {
 // COMPONENTE
 const Navbar = () => {
   return (
-    <>
+    <div className={ style.navbar }>
       <HowToRead />
       <About />
-    </>
+    </div>
   );
 };
 
