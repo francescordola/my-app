@@ -1,13 +1,18 @@
 import React from "react";
 import style from "./style.module.scss";
 
-const handleClick = () => {
-console.log('hello ninja')
-}
+// export const handleClick = () => {
+// console.log("hello ninja");
+// };
 
-const Button = (props) => {
+export const Button = (props) => {
   return (
-      <button className={style.button} onClick={props.onclick}>
+    <button
+      className={style.button}
+      onClick={props.onClick}
+      // Ivan
+      style={{ backgroundColor: props.active ? "black" : "white" }}
+    >
       {props.name}
     </button>
   );

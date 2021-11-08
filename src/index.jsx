@@ -1,18 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Footer from "./components/Footer/footer";
-import Board from "./components/Board/board";
-import Button from "./components/Button/button";
-// import Emoji from "./components/Emoji";
+import App from "./components/App/app";
+import { Button } from "./components/Button/button";
 
 const rootElement = document.getElementById("root");
 
+//Ivan
+const Buttons = () => {
+  return (
+    <div>
+      {/* cosa succede quando clicco sul bottone? */}
+      {/* <Button name="Button" onClick={handleClick} active={false}/> */}
+      <Button name="Button" active={false} />
+      <Button name="Button" active={false} />
+    </div>
+  );
+};
+
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Emoji /> */}
-    <Button name="ciao" />
-    <Board />
-    <Footer />
+    <Buttons />
+    <App />
   </React.StrictMode>,
   rootElement
 );
