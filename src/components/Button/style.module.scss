@@ -1,0 +1,14 @@
+.button {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+
+  font-size: 14px;
+  padding: 11px 20px;
+
+  &:hover {
+    background-color: red;
+  }
+}
