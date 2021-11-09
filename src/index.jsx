@@ -9,10 +9,12 @@ const rootElement = document.getElementById("root");
 const Buttons = () => {
   return (
     <div>
-      {/* cosa succede quando clicco sul bottone? */}
-      {/* <Button name="Button" onClick={handleClick} active={false}/> */}
-      <Button name="Button" active={false} />
-      <Button name="Button" active={false} />
+      {/* cosa succede quando clicco sul bottone, come si comportail componente? */}
+      
+      {/* Vito */}
+      {/* <Button name="Button" onClick={() => props.onClick(0)} active={true} />
+      <Button name="Button" onClick={() => props.onClick(1)} active={false}  /> 
+      */}
     </div>
   );
 };
