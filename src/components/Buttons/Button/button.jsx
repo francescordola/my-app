@@ -7,7 +7,10 @@ export const Button = (props) => {
       className={style.button}
       onClick={props.onClick}
       // Ivan
-      style={{ backgroundColor: props.active ? "black" : "white" }}
+      style={{
+        backgroundColor: props.active ? "black" : "white",
+        color: props.active ? "white" : "black",
+      }}
     >
       {props.name}
     </button>

@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { Button } from "./Button/button";
 
-
 // VITO
 const buttons = [
     { label: 'How to read' },
@@ -14,19 +13,15 @@ const Buttons = () => {
 
   return (
       <div>
-    
-          {buttons.map((button, i) =>
-          {
+          {buttons.map((button, i) => {
               return <Button onClick={() => setIndex(i)} active={index === i} name={button.label} />
-          })}
-                
+          })}      
     </div>
   );
 };
 
 // TEST 2
 // const Buttons = () => {
-    
 //     const [index, setIndex] = useState(0);
 
 //     return (
@@ -43,11 +38,9 @@ const Buttons = () => {
         
 //   return (
 //       <div>
-          
 //         <Button onClick={() => { setColor("black"); }} style={{ background: color }} name="Button" /> 
-     
-//         </div>
-//         );
+//       </div>
+//       );
 //     };     
-       
+      
 export default Buttons;
