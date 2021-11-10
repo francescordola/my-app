@@ -1,21 +1,27 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "./Button/button";
+import style from "./style.module.scss";
 
 // VITO
-const buttons = [
-    { label: 'How to read' },
-    { label: 'About' }
-]
+const buttons = [{ label: "How to read" }, { label: "About" }];
 
 const Buttons = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(null);
 
   return (
-      <div>
-          {buttons.map((button, i) => {
-              return <Button onClick={() => setIndex(i)} active={index === i} name={button.label} />
-          })}      
+    <div className={style.navbar}>
+      {buttons.map((button, i) => {
+        return (
+          <Button
+            onMouseEnter={() => setIndex(i)}
+            //onMouseLeave={'white'}
+            onClick={() => setIndex(i)}
+            active={index === i}
+            name={button.label}
+          />
+        );
+      })}
     </div>
   );
 };
@@ -35,12 +41,12 @@ const Buttons = () => {
 // TEST 1
 // const Buttons = () => {
 //     const [color, setColor] = useState("red");
-        
+
 //   return (
 //       <div>
-//         <Button onClick={() => { setColor("black"); }} style={{ background: color }} name="Button" /> 
+//         <Button onClick={() => { setColor("black"); }} style={{ background: color }} name="Button" />
 //       </div>
 //       );
-//     };     
-      
+//     };
+
 export default Buttons;

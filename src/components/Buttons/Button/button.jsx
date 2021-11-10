@@ -1,12 +1,11 @@
 import React from "react";
-import style from "./style.module.scss";
+import "./style.module.scss";
 
 export const Button = (props) => {
   return (
     <button
-      className={style.button}
+      onMouseEnter={props.onMouseEnter}
       onClick={props.onClick}
-      // Ivan
       style={{
         backgroundColor: props.active ? "black" : "white",
         color: props.active ? "white" : "black",
