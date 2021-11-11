@@ -55,23 +55,33 @@ import "./style.module.scss";
 // }
 
 // OPTION 3 ???
-export const Button = (props) => {
-  const [hover, setHover] = useState('white');
-     
+export const Button = ({ onClick, active, name }) => {
+  const [hover, setHover] = useState(false);
+  console.log("hover", hover);
+  console.log("active", active);
+
+  const getBackgroundColor = ({ active, hover }) => {
+    if (hover && !active) {
+      return { backgroundColor: "green", color: "white" };
+    }
+
+    if (active && !hover) {
+      return { backgroundColor: "black !important", color: "white" };
+    } else {
+      return { backgroundColor: "white !important", color: "black" };
+    }
+  };
+
   return (
     <div>
       <button
-        onMouseEnter={() => setHover('black')}
-        onMouseLeave={() => setHover('white')}
-        onClick={props.onClick}
-        style={{
-          backgroundColor: props.active ? "black" : "white",
-          color: props.active ? "white" : "black",
-        }}
+        onMouseEnter={() => setHover(!hover)}
+        onMouseLeave={() => setHover(!hover)}
+        onClick={onClick}
+        style={{ getBackgroundColor }}
       >
-        {props.name}
+        {name}
       </button>
     </div>
-  
   );
 };

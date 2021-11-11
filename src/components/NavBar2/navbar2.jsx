@@ -4,10 +4,8 @@ import { Button } from "./Button/button";
 import style from "./style.module.scss";
 
 // TEST 3
-const buttons = [
-  { label: "How to read" },
-  { label: "About" }
-];
+// const buttons = [{ label: "How to read" }, { label: "About" }];
+const buttons = [{ label: "How to read" }];
 
 const NavBar2 = () => {
   const [index, setIndex] = useState(null);
