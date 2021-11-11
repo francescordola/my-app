@@ -9,10 +9,17 @@ const DateTime = () => {
 
   useEffect(() => {
     console.log("setInterval");
-    setInterval(() => {
+    const id = setInterval(() => {
       //console.log('setDateTime')
       setDate(new Date());
     }, 1000 * 60);
+
+    // IVAN
+    // ad ogni setinterval viene dato un id.Questo id lo uso per clear quando non ho più bidogno che l'useEffect succeda, quindi quando volgio che smetta di funzionare.
+    // Per ex quando vado in un'altra pagina e non ho più quel componente
+    return () => {
+      clearInterval(id);
+    };
   }, []);
 
   const time = (

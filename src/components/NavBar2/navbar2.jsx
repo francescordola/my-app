@@ -3,10 +3,10 @@ import { useState } from "react";
 import { Button } from "./Button/button";
 import style from "./style.module.scss";
 
-// VITO
+// TEST 3
 const buttons = [{ label: "How to read" }, { label: "About" }];
 
-const Buttons = () => {
+const NavBar2 = () => {
   const [index, setIndex] = useState(null);
 
   return (
@@ -14,8 +14,6 @@ const Buttons = () => {
       {buttons.map((button, i) => {
         return (
           <Button
-            onMouseEnter={() => setIndex(i)}
-            //onMouseLeave={'white'}
             onClick={() => setIndex(i)}
             active={index === i}
             name={button.label}
@@ -27,8 +25,8 @@ const Buttons = () => {
 };
 
 // TEST 2
-// const Buttons = () => {
-//     const [index, setIndex] = useState(0);
+// const NavBar2 = () => {
+//     const [index, setIndex] = useState(null);
 
 //     return (
 //         <div>
@@ -49,4 +47,4 @@ const Buttons = () => {
 //       );
 //     };
 
-export default Buttons;
+export default NavBar2;
