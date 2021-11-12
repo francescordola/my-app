@@ -2,9 +2,44 @@ import React from "react";
 import { useState } from "react";
 import "./style.module.scss";
 
+// OPTION 3 ???
+export const Button = ({ onClick, active, name }) => {
+  const [isHover, setIsHover] = useState(false);
+  console.log("hover", isHover);
+  console.log("active", active);
+
+  // const getBackgroundColor = ({ active, hover }) => {
+  //   if (hover && !active) {
+  //     return { backgroundColor: "green", color: "white" };
+  //   }
+
+  //   if (active && !hover) {
+  //     return { backgroundColor: "black !important", color: "white" };
+  //   } else {
+  //     return { backgroundColor: "white !important", color: "black" };
+  //   }
+  // };
+
+  return (
+    <div>
+      <button
+        onMouseEnter={() => setIsHover(!isHover)}
+        onMouseLeave={() => setIsHover(!isHover)}
+        onClick={onClick}
+        //style={{ getBackgroundColor }}
+        // style={{
+        //   backgroundColor: active ? "black" : "white",
+        //   color: active ? "white" : "black",
+        // }}
+      >
+        {name}
+      </button>
+    </div>
+  );
+};
+
 // OPTION 1
 // export const Button = (props) => {
-
 //   const MouseEnter = (event) => {
 //     event.target.style.background = "grey";
 //   };
@@ -53,35 +88,3 @@ import "./style.module.scss";
 //     </button>
 //   );
 // }
-
-// OPTION 3 ???
-export const Button = ({ onClick, active, name }) => {
-  const [hover, setHover] = useState(false);
-  console.log("hover", hover);
-  console.log("active", active);
-
-  const getBackgroundColor = ({ active, hover }) => {
-    if (hover && !active) {
-      return { backgroundColor: "green", color: "white" };
-    }
-
-    if (active && !hover) {
-      return { backgroundColor: "black !important", color: "white" };
-    } else {
-      return { backgroundColor: "white !important", color: "black" };
-    }
-  };
-
-  return (
-    <div>
-      <button
-        onMouseEnter={() => setHover(!hover)}
-        onMouseLeave={() => setHover(!hover)}
-        onClick={onClick}
-        style={{ getBackgroundColor }}
-      >
-        {name}
-      </button>
-    </div>
-  );
-};

@@ -6,7 +6,7 @@ import "./button.modules.scss";
  * Primary UI component for user interaction
  */
 
-export const Button = ({
+export const Buttonstory = ({
   secondary,
   backgroundColor,
   size,
@@ -30,7 +30,7 @@ export const Button = ({
   );
 };
 
-Button.propTypes = {
+Buttonstory.propTypes = {
   /**
    * Is this the principal call to action on the page?
    */
@@ -53,7 +53,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
 };
 
-Button.defaultProps = {
+Buttonstory.defaultProps = {
   backgroundColor: true,
   primary: true,
   size: "medium",
