@@ -16,6 +16,15 @@
     color: white;
     background-color: black;
   }
+  &:active {
+    background-color: black;
+    color: white;
+  }
+
+  &:focus {
+    background-color: green;
+    color: white;
+  }
 }
 
 .storybook-button--secondary {
@@ -25,6 +34,15 @@
 
   &:hover {
     background-color: grey;
+  }
+  &:active {
+    background-color: black;
+    color: white;
+  }
+
+  &:focus {
+    background-color: green;
+    color: white;
   }
 }
 
