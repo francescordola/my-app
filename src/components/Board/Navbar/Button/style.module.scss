@@ -14,13 +14,14 @@ button {
   &:hover {
     background-color: red;
   }
+
   &:active {
     background-color: black;
     color: white;
   }
 
   &:focus {
-    background-color: green;
+    background-color: green !important;
     color: white;
   }
 }

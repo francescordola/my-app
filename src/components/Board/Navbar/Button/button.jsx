@@ -2,49 +2,14 @@ import React from "react";
 //import { useState } from "react";
 import "./style.module.scss";
 
-export const Button = ({ onClick, name }) => {
+// OPTION 4
+export const Button = ({ label }) => {
   return (
     <div>
-      <button onClick={onClick}>{name}</button>
+      <button>{label}</button>
     </div>
   );
 };
-
-// OPTION 3
-// export const Button = ({ onClick, active, name }) => {
-//   // const [isHover, setIsHover] = useState(false);
-//   // console.log("hover", isHover);
-//   // console.log("active", active);
-
-//   // const getBackgroundColor = ({ active, hover }) => {
-//   //   if (hover && !active) {
-//   //     return { backgroundColor: "green", color: "white" };
-//   //   }
-
-//   //   if (active && !hover) {
-//   //     return { backgroundColor: "black !important", color: "white" };
-//   //   } else {
-//   //     return { backgroundColor: "white !important", color: "black" };
-//   //   }
-//   // };
-
-//   return (
-//     <div>
-//       <button
-//         // onMouseEnter={() => setIsHover(!isHover)}
-//         // onMouseLeave={() => setIsHover(!isHover)}
-//         onClick={onClick}
-//         //style={{ getBackgroundColor }}
-//         // style={{
-//         //   backgroundColor: active ? "black" : "white",
-//         //   color: active ? "white" : "black",
-//         // }}
-//       >
-//         {name}
-//       </button>
-//     </div>
-//   );
-// };
 
 // OPTION 1
 // export const Button = (props) => {
@@ -70,29 +35,3 @@ export const Button = ({ onClick, name }) => {
 //     </button>
 //   );
 // };
-
-// OPTION 2
-// export const Button = (props) => {
-//    let [hover,setHover]=useState(false);
-
-//    let buttonstyle={
-//     backgroundColor:''
-//   }
-
-//   if(hover){
-//     buttonstyle.backgroundColor="green";
-//   }
-//   else{
-//     buttonstyle.backgroundColor='';
-//   }
-
-//   return (
-//     <button style={buttonstyle}
-//       onClick={props.onClick}
-//       onMouseOver={()=>setHover(true)}
-//       onMouseOut={() => setHover(false)}
-//     >
-//       {props.name}
-//     </button>
-//   );
-// }
