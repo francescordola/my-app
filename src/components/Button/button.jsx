@@ -2,7 +2,6 @@ import React from "react";
 //import { useState } from "react";
 import "./button.module.scss";
 
-// OPTION 1
 export const Button = (props) => {
   const MouseEnter = (event) => {
     event.target.style.background = "grey";
