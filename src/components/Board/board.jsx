@@ -1,18 +1,16 @@
 import React from "react";
 import Content from "../Content/Content";
-import Navbarstory from "../Navbarstory/Navbarstory";
-import Navbar from "../Navbar/Navbar";
+import { Button } from "../Button/Button";
 import style from "./board.module.scss";
 
-// COMPONENTE
-const Board = () => {
+const Board = () =>
+{
   return (
     <div className={style.board}>
-      <Navbar />
-      <Navbarstory />
-      <Content />
+      <Button label="About" />
+      <Content />{" "}
     </div>
   );
-};
+}
 
 export default Board;

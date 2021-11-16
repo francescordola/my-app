@@ -3,7 +3,6 @@ import Footer from "../Footer/Footer";
 import Board from "../Board/Board";
 // import Emoji from "./components/Emoji";
 
-// COMPONENTE
 const App = () => {
   return (
     <>
