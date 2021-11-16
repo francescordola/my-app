@@ -1,8 +1,8 @@
 import React from "react";
-import style from "./styles.module.scss";
+import style from "./content.module.scss";
 
 // COMPONENTE
-const About = () => {
+const Content = () => {
   return (
     <div className={style.rectangle}>
       <div className={style.text}>Lorem ipsum dolor</div>
@@ -10,4 +10,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Content;

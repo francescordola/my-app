@@ -1,8 +1,8 @@
 import React from "react";
-import Pannelli from "./Pannelli/pannelli";
-import Navbarstory from "./Navbarstory/navbarstory";
-import Navbar from "./Navbar/navbar";
-import style from "./style.module.scss";
+import Content from "../Content/content";
+import Navbarstory from "../Navbarstory/navbarstory";
+import Navbar from "../Navbar/navbar";
+import style from "./board.module.scss";
 
 // COMPONENTE
 const Board = () => {
@@ -10,7 +10,7 @@ const Board = () => {
     <div className={style.board}>
       <Navbar />
       <Navbarstory />
-      <Pannelli />
+      <Content />
     </div>
   );
 };

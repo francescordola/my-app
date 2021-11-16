@@ -1,6 +1,6 @@
 import React from "react";
 //import { useState } from "react";
-import "./style.module.scss";
+import "./button.module.scss";
 
 // OPTION 4
 export const Button = ({ label }) => {

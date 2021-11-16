@@ -1,5 +1,5 @@
 import React from "react";
-import { Buttonstory } from "../../../stories/Buttonstory";
+import { Buttonstory } from "../../stories/Buttonstory";
 import style from "./style.module.scss";
 
 const About = () => {

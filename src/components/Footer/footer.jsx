@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import "./styles.module.scss";
+import "./footer.module.scss";
 
 // DATE + TIME
 const DateTime = () => {
@@ -42,7 +42,7 @@ const DateTime = () => {
 };
 
 // CITY
-const Name = (props) => {
+const Location = (props) => {
   //console.log('city')
   const name = <p>{props.name}</p>;
   return name;
@@ -51,7 +51,7 @@ const Name = (props) => {
 const Footer = () => {
   return (
     <footer>
-      <Name name="City" />
+      <Location name="City" />
       <DateTime />
     </footer>
   );

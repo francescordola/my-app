@@ -1,7 +1,7 @@
 import React from "react";
 //import { useState } from "react";
-import { Button } from "./Button/button";
-import style from "./style.module.scss";
+import { Button } from "../Button/button";
+import style from "./navbar.module.scss";
 
 // TEST 4
 const buttons = [{ label: "How to read" }, { label: "About" }];
