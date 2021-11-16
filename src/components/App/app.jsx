@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "../Footer/Footer";
-import Board from "../Board/Board";
+import { Navigation } from "../Navigation/Navigation";
 // import Emoji from "./components/Emoji";
 
 const App = () => {
   return (
     <>
       {/* <Emoji /> */}
-      <Board />
+      <Navigation />
       <Footer />
     </>
   );

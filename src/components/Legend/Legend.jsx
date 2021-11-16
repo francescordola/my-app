@@ -1,16 +1,15 @@
 import React from "react";
 import Content from "../Content/Content";
 import { Button } from "../Button/Button";
-import style from "./board.module.scss";
+import style from "./legend.module.scss";
 
-const Board = () =>
-{
+const Legend = () => {
   return (
     <div className={style.board}>
-      <Button label="About" />
-      <Content />{" "}
+      <Button label="How to read" />
+      <Content text="lalallala" />
     </div>
   );
-}
+};
 
-export default Board;
+export default Legend;

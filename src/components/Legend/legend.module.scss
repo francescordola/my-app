@@ -1,0 +1,28 @@
+.board {
+  position: static;
+  bottom: 0;
+
+  button {
+    position: absolute;
+    right: 78px;
+    bottom: 50vh;
+
+    display: flex;
+
+    &:hover {
+      background-color: red;
+      color: white;
+    }
+    
+    // &:active {
+    //   background-color: black;
+    //   color: white;
+    // }
+
+    &:focus {
+      background-color: grey;
+      color: white;
+    }
+  }
+}
+

@@ -1,11 +1,10 @@
 import React from "react";
 import style from "./content.module.scss";
 
-// COMPONENTE
-const Content = () => {
+const Content = ({ text }) => {
   return (
     <div className={style.rectangle}>
-      <div className={style.text}>Lorem ipsum dolor</div>
+      <p>{text}</p>
     </div>
   );
 };
