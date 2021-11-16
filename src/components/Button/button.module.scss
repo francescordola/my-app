@@ -11,17 +11,17 @@ button {
   font-size: 14px;
   padding: 11px 20px;
 
-  &:hover {
-    background-color: red;
-  }
+  // &:hover {
+  //   background-color: red;
+  // }
 
-  &:active {
-    background-color: black;
-    color: white;
-  }
+  // &:active {
+  //   background-color: black;
+  //   color: white;
+  // }
 
-  &:focus {
-    background-color: green !important;
-    color: white;
-  }
+  // &:focus {
+  //   background-color: green !important;
+  //   color: white;
+  // }
 }
