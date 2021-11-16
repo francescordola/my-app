@@ -1,7 +1,7 @@
 import React from "react";
-import Content from "../Content/content";
-import Navbarstory from "../Navbarstory/navbarstory";
-import Navbar from "../Navbar/navbar";
+import Content from "../Content/Content";
+import Navbarstory from "../Navbarstory/Navbarstory";
+import Navbar from "../Navbar/Navbar";
 import style from "./board.module.scss";
 
 // COMPONENTE

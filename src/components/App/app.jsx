@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../Footer/footer";
-import Board from "../Board/board";
+import Footer from "../Footer/Footer";
+import Board from "../Board/Board";
 // import Emoji from "./components/Emoji";
 
 // COMPONENTE
