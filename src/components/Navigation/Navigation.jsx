@@ -1,13 +1,12 @@
-import React from 'react'
-import About from "../About/About";
-import Legend from '../Legend/Legend';
+import React from "react";
+import { About } from "../About/About";
+import { Legend } from "../Legend/Legend";
 
 export const Navigation = () => {
-    return (
-      <div>
-        <About />
-        <Legend />
-      </div>
-    );
-}
-
+  return (
+    <div>
+      <About />
+      <Legend />
+    </div>
+  );
+};

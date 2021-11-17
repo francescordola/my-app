@@ -44,11 +44,11 @@ const DateTime = () => {
 // CITY
 const Location = (props) => {
   //console.log('city')
-  const name = <p>{props.name}</p>;
-  return name;
+  const cityName = <p>{props.name}</p>;
+  return cityName;
 };
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer>
       <Location name="City" />
@@ -56,5 +56,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

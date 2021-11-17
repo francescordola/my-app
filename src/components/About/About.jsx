@@ -1,16 +1,13 @@
 import React from "react";
-import Content from "../Content/Content";
+import { Content } from "../Content/Content";
 import { Button } from "../Button/Button";
 import style from "./about.module.scss";
 
-const About = () => {
+export const About = () => {
   return (
     <div className={style.board}>
       <Button label="About" />
-      <Content text="lorem ipsum"
-      background="red"/>
+      <Content text="lorem ipsum" classModule={["bgBlue", "p", "m3"]} />
     </div>
   );
 };
-
-export default About;

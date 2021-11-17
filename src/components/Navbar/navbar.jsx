@@ -2,13 +2,15 @@ import React from "react";
 import { Button } from "../Button/Button";
 import style from "./navbar.module.scss";
 
-const buttons = [{ label: "How to read" }, { label: "About" }];
+const buttons = [{ name: "How to read" }, { name: "About" }];
 
 const Navbar = () => {
   return (
     <div className={style.navbar}>
-      {buttons.map((button) => {
-        return <Button key={button.label} label={button.label} />;
+      {buttons.map((buttonName) => {
+        return <Button
+          key={buttonName.name} 
+          label={buttonName.name} />;
       })}
     </div>
   );
