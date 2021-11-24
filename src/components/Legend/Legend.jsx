@@ -7,7 +7,7 @@ export const Legend = () => {
   return (
     <div className={style.board}>
       <Button label="How to read" />
-      <Content text="lalallala" />
+      <Content text="How to read" />
     </div>
   );
 };

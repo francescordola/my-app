@@ -5,8 +5,8 @@ import { Legend } from "../Legend/Legend";
 export const Navigation = () => {
   return (
     <div>
-      <About />
       <Legend />
+      <About />
     </div>
   );
 };

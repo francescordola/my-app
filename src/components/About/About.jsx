@@ -7,7 +7,7 @@ export const About = () => {
   return (
     <div className={style.board}>
       <Button label="About" />
-      <Content text="lorem ipsum" classModule={["bgBlue", "p", "m3"]} />
+      <Content text="About" />
     </div>
   );
 };

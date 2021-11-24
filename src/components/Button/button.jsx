@@ -1,8 +1,6 @@
 import React from "react";
-import "./button.module.scss";
+import style from "./button.module.scss";
 
 export const Button = ({ label }) => {
-  return (
-      <button>{label}</button>
-  );
+  return <button>{label}</button>;
 };

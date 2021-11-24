@@ -8,9 +8,7 @@ const Navbar = () => {
   return (
     <div className={style.navbar}>
       {buttons.map((buttonName) => {
-        return <Button
-          key={buttonName.name} 
-          label={buttonName.name} />;
+        return <Button key={buttonName.name} label={buttonName.name} />;
       })}
     </div>
   );
