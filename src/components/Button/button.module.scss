@@ -1,13 +1,54 @@
 button {
+  display: inline-block;
+  position: absolute;
+  display: flex;
+  bottom: 50vh;
+
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  font-size: 14px;
   border: 0;
   cursor: pointer;
-  display: inline-block;
 
+  padding: 11px 20px;
   background-color: white;
   color: black;
+}
 
-  font-size: 14px;
-  padding: 11px 20px;
+.btn-legend {
+  right: 78px;
+
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+
+  // &:active {
+  //   background-color: black;
+  //   color: white;
+  // }
+
+  &:focus {
+    background-color: grey;
+    color: white;
+  }
+}
+
+.btn-about {
+  right: 0;
+
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+
+  // &:active {
+  //   background-color: black;
+  //   color: white;
+  // }
+
+  &:focus {
+    background-color: black;
+    color: white;
+  }
 }

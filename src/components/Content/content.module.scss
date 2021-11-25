@@ -1,14 +1,25 @@
-section {
+div {
   display: inline-block;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   height: 50vh;
-
   background-color: white;
+}
 
+.content-about {
+  background-color: red;
   p {
     padding-left: 20px;
+    color: #fff;
+  }
+}
+
+.content-legend {
+  background-color: yellowgreen;
+  p {
+    padding-left: 20px;
+    color: #fff;
   }
 }

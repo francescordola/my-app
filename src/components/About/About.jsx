@@ -1,13 +1,17 @@
 import React from "react";
 import { Content } from "../Content/Content";
 import { Button } from "../Button/Button";
-import style from "./about.module.scss";
 
 export const About = () => {
   return (
-    <div className={style.board}>
-      <Button label="About" />
-      <Content text="About" />
+    <div>
+      <Button label="About" type="btn-about" />
+      <Content type="content-about" text="About" />
     </div>
   );
 };
+
+// about z-index = 1
+// How to read = 0
+
+//style={{ z-index: props.active ? "1" : "0" }}

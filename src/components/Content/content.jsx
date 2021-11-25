@@ -1,10 +1,10 @@
 import React from "react";
-import "./content.module.scss";
+import style from "./content.module.scss";
 
-export const Content = ({ text }) => {
+export const Content = ({ text, type }) => {
   return (
-    <section>
+    <div className={style[type]}>
       <p>{text}</p>
-    </section>
+    </div>
   );
 };

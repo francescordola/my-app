@@ -1,13 +1,12 @@
 import React from "react";
 import { Content } from "../Content/Content";
 import { Button } from "../Button/Button";
-import style from "./legend.module.scss";
 
-export const Legend = () => {
+export const Legend = ({ onClick }) => {
   return (
-    <div className={style.board}>
-      <Button label="How to read" />
-      <Content text="How to read" />
+    <div>
+      <Button type="btn-legend" onClick={onClick} label="How to read" />
+      <Content type="content-legend" text="How to read" />
     </div>
   );
 };
