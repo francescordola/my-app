@@ -8,3 +8,4 @@ export const Button = ({ label, type, onClick }) => {
     </button>
   );
 };
+
