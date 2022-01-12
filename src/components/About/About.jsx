@@ -1,6 +1,6 @@
 import React from "react";
-import { Content } from "../Content/Content";
-import { Button } from "../Button/Button";
+import { Content } from "../Content/content.jsx";
+import { Button } from "../Button/button.jsx";
 
 export const About = (active, onClick) => {
   return (

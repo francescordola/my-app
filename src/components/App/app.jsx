@@ -1,6 +1,6 @@
 import React from "react";
-import { Footer } from "../Footer/Footer";
-import { Navigation } from "../Navigation/Navigation";
+import { Footer } from "../Footer/footer.jsx";
+import { Navigation } from "../Navigation/navigation.jsx";
 // import Emoji from "./components/Emoji";
 
 const App = () => {

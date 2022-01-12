@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../Button/Button";
+import { Button } from "../Button/button.jsx";
 import style from "./navbar.module.scss";
 
 const buttons = [{ name: "How to read" }, { name: "About" }];

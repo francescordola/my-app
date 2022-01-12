@@ -1,6 +1,6 @@
 import { React, useState } from "react";
-import { About } from "../About/About";
-import { Legend } from "../Legend/Legend";
+import { About } from "../About/about.jsx";
+import { Legend } from "../Legend/legend.jsx";
 
 export const Navigation = () => {
   const [index, setIndex] = useState(0);
